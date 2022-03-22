@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Tic Tac Toe</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/tictactoe.js" defer></script>
+</head>
+
+<body>
+    <!-- Game board head -->
+    <div class="head">
+        <div class="title">TIC TAC TOE</div>
+        <div class="details">
+            <div class="count" id="count-x">0</div>
+            <div class="turns">
+                <div class="turn-indicator bg-black" id="turn-x">Player X</div>
+                <div class="turn-indicator bg-white" id="turn-o">Player O</div>
+            </div>
+            <div class="count" id="count-o">0</div>
+        </div>
+    </div>
+    <!-- Game board -->
+    <div class="game-board" id="game-board">
+        <div class="cell" id="0"></div>
+        <div class="cell" id="1"></div>
+        <div class="cell" id="2"></div>
+        <div class="cell" id="3"></div>
+        <div class="cell" id="4"></div>
+        <div class="cell" id="5"></div>
+        <div class="cell" id="6"></div>
+        <div class="cell" id="7"></div>
+        <div class="cell" id="8"></div>
+    </div>
+    <!-- Select game mode -->
+    <div class="btn-container">
+        <button class="game-mode-btn" id="one-player">1 player</button>
+        <button class="game-mode-btn" data-restart>Restart</button>
+        <button class="game-mode-btn clicked" id="two-player">2 players</button>
+    </div>
+    <!-- Range slider -->
+    <div class="range-slider">
+        <span id="range-value">Size: 3 x 3</span>
+        <input id="range" type="range" value="3" min="3" max="9" step="2"></input>
+    </div>
+    <!-- Endgame popup -->
+    <div class="popup end-game" id="endgame-popup">
+        <div class="huge-text" id="win-text">Winning message !</div>
+        <button class="restart" data-restart>Restart</button>
+    </div>
+    <!-- Landing screen animation -->
+    <div class="landing" id="landing">
+        <div class="huge-text">Welcome to my Tic Tac Toe !</div>
+        <span>Raphael CAUSSE &#169; 2022 CY TECH</span>
+    </div>
+</body>
+
+</html>
